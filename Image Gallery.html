@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Images Gallery</h1>
+    
+    <div class="gallery">
+        <div class="gallery-item" onclick="openModal(0)">
+            <img src="nature1.jpg" alt="image 1">
+        </div>
+        <div class="gallery-item" onclick="openModal(1)">
+            <img src="nature2.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item" onclick="openModal(2)">
+            <img src="nature3.jpg" alt="Image 3">
+        </div>
+        <div class="gallery-item" onclick="openModal(3)">
+            <img src="car3.jpg" alt="Image 4">
+        </div>
+        <div class="gallery-item" onclick="openModal(4)">
+            <img src="car2.jpg" alt="Image 5">
+        </div>
+        <div class="gallery-item" onclick="openModal(5)">
+            <img src="car1.jpg" alt="Image 6">
+        </div>
+        <div class="gallery-item" onclick="openModal(6)">
+            <img src="car4.jpg" alt="Image 7">
+        </div>
+        <div class="gallery-item" onclick="openModal(7)">
+            <img src="car6.jpg" alt="Image 8">
+        </div>
+    </div>
+    
+         
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="modal-nav">
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
